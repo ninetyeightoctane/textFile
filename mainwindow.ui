@@ -38,9 +38,11 @@
     <property name="title">
      <string>TextEdit</string>
     </property>
+    <addaction name="actionSave"/>
     <addaction name="actionOpen"/>
     <addaction name="actionNew"/>
     <addaction name="actionExit"/>
+    <addaction name="separator"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
@@ -51,7 +53,13 @@
     <addaction name="actionPaste"/>
     <addaction name="actionCopy"/>
    </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
    <addaction name="menuTextEdit"/>
+   <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">

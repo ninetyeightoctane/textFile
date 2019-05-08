@@ -2,6 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QFile>
+#include <QFileDialog>
+#include <QTextStream>
+#include <QMessageBox>
 
 namespace Ui {
 class MainWindow;
@@ -16,6 +20,10 @@ public:
     ~MainWindow();
 
 private slots:
+    void on_actionnew_triggered();
+
+    void on_actionOpen_triggered();
+
     void on_actionSave_triggered();
 
     void on_actionExit_triggered();
@@ -30,6 +38,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QString currentFile = "";
 };
 
 #endif // MAINWINDOW_H
